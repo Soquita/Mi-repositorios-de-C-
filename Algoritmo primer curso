@@ -1,0 +1,28 @@
+//Algoritmo para capturar N números y organizarlo de menor a mayor
+//Se debe capturar varias veces la misma variable pero debo colocarla en una posición diferente lo mejor es trabajar con arreglos
+{    //Inicio
+ int n,i,temp; //Inicialmente defino variables
+  float numero[n], a;
+imprimir("Digite la cantidad de números a ordenar: ");  //Como son N números, debo solicitar al usuario la cantidad de números que va a organizar y guardo en una variable 
+ guardar n;
+ para (i=0;i<n;i++) //El primer arreglo guardará en una posición i cada número digitado y como el computador inicia en la posición 0 entonces debe ser menor al valor de n
+     {
+       imprimir("Digite número: ")
+       guardar ("%.2f",numero[i]);
+     }
+  para (temp=0;temp<n;temp++) //necesito recorrer por cada número todo el arreglo inicial
+     {
+      para (i=temp+1;i<n;i++)
+          {
+           If (numero[i]<numero[temp])
+               a=numero[temp];
+               numero[temp]=numero[i];
+               numero[i]=a;
+             }      
+          }
+     }
+ para (float i=0;i<n;i++) // Imprimir el arreglo ordenado
+      {
+       imprimir ("En orden de menor a mayor %d",numero[i]);
+      }
+}
